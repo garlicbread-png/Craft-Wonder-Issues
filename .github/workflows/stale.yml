@@ -1,0 +1,36 @@
+name: 'Close Stale Issues'
+
+on:
+  schedule:
+    # Runs automatically every day at midnight
+    - cron: '0 0 * * *'
+
+permissions:
+  issues: write
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v9
+        with:
+          # Number of days of inactivity before an issue becomes stale
+          days-before-stale: 7
+          
+          # Number of days of inactivity before a stale issue is closed
+          days-before-close: 3
+          
+          # The message posted when marking an issue as stale
+          stale-issue-message: >
+            This issue has been automatically marked as stale because it has not had
+            recent activity. It will be closed in 3 days if no further activity occurs.
+            Thank you for your contributions!
+            
+          # The message posted when closing a stale issue
+          close-issue-message: >
+            This issue has been automatically closed due to inactivity. If you are still
+            experiencing this problem, please ensure you have attached your crash logs
+            and feel free to open a new issue.
+
+          # The label applied to stale issues
+          stale-issue-label: 'stale'
