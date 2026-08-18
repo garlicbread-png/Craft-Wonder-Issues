@@ -24,7 +24,7 @@ To help us diagnose and fix your issue, please click the **"New Issue"** button 
 * **Clear Steps to Reproduce:** Exactly what were you doing right before the problem occurred?
 
 ### ⚠️ Crash Logs are Mandatory
-If your game crashed or froze, we **cannot** help you without a log file. 
+If your game crashed or froze, I **cannot** help without a log file. 
 1. Locate your modpack directory.
 2. Open the `crash-reports` folder or the `logs` folder.
 3. Open the latest file, copy all text, and paste it into [mclo.gs](https://mclo.gs) or [Pastebin](https://pastebin.com).
